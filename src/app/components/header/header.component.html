@@ -12,16 +12,14 @@
     </svg>
   </label>
   <div class="ae-container-fluid rk-topbar">
-    <h1 class="rk-logo"><a href="index.html">Contal<sup>tm</sup></a></h1>
+    <h1 class="rk-logo"><a routerLink="home">Contal<sup>tm</sup></a></h1>
     <nav class="rk-navigation">
       <ul class="rk-menu">
-        <li class="rk-menu__item"><a href="index.html" class="rk-menu__link">Inicio</a>
+        <li class="rk-menu__item" routerLinkActive="active">
+          <a routerLink="home" class="rk-menu__link">Inicio</a>
         </li>
-        <li class="active rk-menu__item"><a href="portfolio.html" class="rk-menu__link">Transtornos</a>
-        </li>
-        <li class="rk-menu__item"><a href="blog.html" class="rk-menu__link">Blog</a>
-        </li>
-        <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Contactanos</a>
+        <li class="rk-menu__item" routerLinkActive="active">
+          <a routerLink="about" class="rk-menu__link">Sobre nosotros</a>
         </li>
       </ul>
       <form class="rk-search">
