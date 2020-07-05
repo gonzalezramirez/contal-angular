@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 
+
 //servicios
 import { InformacionService } from "./services/informacion.service";
 import { ProductosService } from "./services/productos.service";
