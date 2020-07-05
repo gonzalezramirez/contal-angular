@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 export class ProductosService {
 
 cargando= true;
+productos: Producto[] = [];
 
   constructor( public http: HttpClient ) {
 this.cargarProductos();
@@ -12,9 +13,16 @@ this.cargarProductos();
 
   private cargarProductos(){
     this.http.get('https://contal-674c6.firebaseio.com/productos_idx.json')
-    .subscribe( (resp:any[] )=> {
+    .subscribe( (resp: Producto[] )=> {
     console.log(resp);
-    this.cargando = false; 
+    this.productos = resp;
+    this.cargando = false;
   });
   }
+}
+interface Producto {
+  categoria: string;
+  cod: string;
+  titulo: string;
+  url: string;
 }
