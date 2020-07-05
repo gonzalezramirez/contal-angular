@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 //servicios
 import { InformacionService } from "./services/informacion.service";
+import { ProductosService } from "./services/productos.service";
 //rutas
 import { app_routing } from "./app.routes";
 
@@ -16,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ItemComponent } from './components/item/item.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { ItemComponent } from './components/item/item.component';
     app_routing
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
